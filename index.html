@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Build Your PC</title>
+  <title>Choose Case</title>
   <style>
     body {
       margin: 0;
@@ -19,21 +18,14 @@
     .card {
       background: #020617;
       border-radius: 16px;
-      padding: 40px;
+      padding: 30px;
       width: 90%;
-      max-width: 500px;
+      max-width: 700px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-      text-align: center;
     }
 
     h1 {
-      font-size: 2.5rem;
       margin-bottom: 10px;
-    }
-
-    p {
-      color: #94a3b8;
-      margin-bottom: 30px;
     }
 
     .progress {
@@ -41,42 +33,65 @@
       border-radius: 999px;
       height: 10px;
       overflow: hidden;
-      margin-bottom: 30px;
+      margin: 20px 0;
     }
 
     .progress-bar {
-      width: 0%;
+      width: 20%;
       height: 100%;
       background: #22c55e;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      background: #22c55e;
-      color: #022c22;
-      border-radius: 12px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: transform 0.2s, background 0.2s;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
 
-    .btn:hover {
-      transform: scale(1.05);
-      background: #16a34a;
+    .option {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 0.2s, border 0.2s;
+    }
+
+    .option:hover {
+      transform: scale(1.03);
+      border-color: #22c55e;
+    }
+
+    .next {
+      margin-top: 30px;
+      text-align: right;
+    }
+
+    a {
+      color: #22c55e;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Build Your PC</h1>
-    <p>Step-by-step custom PC builder</p>
+  <div class=\"card\">
+    <h1>Step 1: Choose Your Case</h1>
 
-    <div class="progress">
-      <div class="progress-bar"></div>
+    <div class=\"progress\">
+      <div class=\"progress-bar\"></div>
     </div>
 
-    <a href="case.html" class="btn">Start Building</a>
+    <div class=\"grid\">
+      <div class=\"option\">ATX Mid Tower</div>
+      <div class=\"option\">Micro-ATX Case</div>
+      <div class=\"option\">Mini-ITX Case</div>
+    </div>
+
+    <div class=\"next\">
+      <a href=\"motherboard.html\">Next: Motherboard →</a>
+    </div>
   </div>
 </body>
 </html>
