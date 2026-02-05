@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build Your PC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #020617;
+      border-radius: 16px;
+      padding: 40px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    .progress {
+      background: #1e293b;
+      border-radius: 999px;
+      height: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      background: #22c55e;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #22c55e;
+      color: #022c22;
+      border-radius: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #16a34a;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Build Your PC</h1>
+    <p>Step-by-step custom PC builder</p>
+
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+
+    <a href="case.html" class="btn">Start Building</a>
+  </div>
+</body>
+</html>
